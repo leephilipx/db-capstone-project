@@ -1,0 +1,67 @@
+CREATE DATABASE  IF NOT EXISTS `littlelemondb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `littlelemondb`;
+-- MySQL dump 10.13  Distrib 8.0.38, for Win64 (x86_64)
+--
+-- Host: localhost    Database: littlelemondb
+-- ------------------------------------------------------
+-- Server version	8.0.39
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `menu`
+--
+
+DROP TABLE IF EXISTS `menu`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `menu` (
+  `MenuID` int NOT NULL AUTO_INCREMENT,
+  `CuisineID` int NOT NULL,
+  `StarterID` int NOT NULL,
+  `CourseID` int NOT NULL,
+  `DrinkID` int NOT NULL,
+  `DessertID` int NOT NULL,
+  PRIMARY KEY (`MenuID`),
+  KEY `CuisineID_idx` (`CuisineID`),
+  KEY `StarterID_idx` (`StarterID`),
+  KEY `CourseID_idx` (`CourseID`),
+  KEY `DrinkID_idx` (`DrinkID`),
+  KEY `DessertID_idx` (`DessertID`),
+  CONSTRAINT `CourseID` FOREIGN KEY (`CourseID`) REFERENCES `menuitem` (`MenuItemID`),
+  CONSTRAINT `CuisineID` FOREIGN KEY (`CuisineID`) REFERENCES `cuisine` (`CuisineID`),
+  CONSTRAINT `DessertID` FOREIGN KEY (`DessertID`) REFERENCES `menuitem` (`MenuItemID`),
+  CONSTRAINT `DrinkID` FOREIGN KEY (`DrinkID`) REFERENCES `menuitem` (`MenuItemID`),
+  CONSTRAINT `StarterID` FOREIGN KEY (`StarterID`) REFERENCES `menuitem` (`MenuItemID`)
+) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `menu`
+--
+
+LOCK TABLES `menu` WRITE;
+/*!40000 ALTER TABLE `menu` DISABLE KEYS */;
+INSERT INTO `menu` VALUES (1,1,1,7,13,19),(2,2,2,8,14,20),(3,2,3,9,15,21),(4,3,4,10,16,22),(5,1,5,11,17,23),(6,2,6,12,18,24),(7,2,1,7,13,19),(8,3,2,8,14,20),(9,1,3,9,15,21),(10,2,4,10,16,22),(11,2,5,11,17,23),(12,3,6,12,18,24),(13,3,1,8,14,20),(14,1,2,9,15,21),(15,2,3,10,16,22),(16,2,4,11,17,23),(17,3,5,12,18,24),(18,1,6,7,13,19),(19,2,1,8,14,20),(20,2,2,9,15,21),(21,3,3,10,16,22),(22,1,4,11,17,23),(23,2,5,12,18,24),(24,2,6,7,13,19),(25,2,1,9,15,21),(26,3,2,10,16,22),(27,1,3,11,17,23),(28,2,4,12,18,24),(29,2,5,7,13,19),(30,3,6,8,14,20),(31,1,1,9,15,21),(32,2,2,10,16,22),(33,2,3,11,17,23),(34,3,4,12,18,24),(35,1,5,7,13,19),(36,2,6,8,14,20),(37,2,1,10,16,22),(38,2,2,11,17,23),(39,3,3,12,18,24),(40,1,4,7,13,19),(41,2,5,8,14,20),(42,2,6,9,15,21),(43,3,1,10,16,22),(44,1,2,11,17,23),(45,2,3,12,18,24),(46,2,4,7,13,19),(47,3,5,8,14,20),(48,1,6,9,15,21),(49,1,1,11,17,23),(50,2,2,12,18,24),(51,2,3,7,13,19),(52,3,4,8,14,20),(53,1,5,9,15,21),(54,2,6,10,16,22),(55,2,1,11,17,23),(56,3,2,12,18,24),(57,1,3,7,13,19),(58,2,4,8,14,20),(59,2,5,9,15,21),(60,3,6,10,16,22),(61,3,1,12,18,24),(62,1,2,7,13,19),(63,2,3,8,14,20),(64,2,4,9,15,21),(65,3,5,10,16,22),(66,1,6,11,17,23),(67,2,1,12,18,24),(68,2,2,7,13,19),(69,3,3,8,14,20),(70,1,4,9,15,21),(71,2,5,10,16,22),(72,2,6,11,17,23);
+/*!40000 ALTER TABLE `menu` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-08-06  0:29:34
