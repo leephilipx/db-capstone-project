@@ -291,14 +291,14 @@ Tableau Workbook (for all tasks):
 ### Task 1 to 5: Tableau Visualizations
 
 Tableau Workbook (for all tasks):  
-[Meta Database Engineer Course 9 - Little Lemon.twbx](./Meta%20Database%20Engineer%20Course%209%20-%20Little%20Lemon.twbx)
+[Meta Database Engineer Course 8 - Little Lemon.twbx](./Meta%20Database%20Engineer%20Course%208%20-%20Little%20Lemon.twbx)
 
 Tableau Public:  
-[Customer sales](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse9-LittleLemon/Customersales)  
-[Profit chart](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse9-LittleLemon/Profitchart)  
-[Sales bubble chart](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse9-LittleLemon/Salesbubblechart)  
-[Cuisine sales and profits](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse9-LittleLemon/Cuisinesalesandprofits)  
-[Interactive sales dashboard](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse9-LittleLemon/Interactivesalesdashboard)  
+[Customer sales](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse8-LittleLemon/Customersales)  
+[Profit chart](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse8-LittleLemon/Profitchart)  
+[Sales bubble chart](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse8-LittleLemon/Salesbubblechart)  
+[Cuisine sales and profits](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse8-LittleLemon/Cuisinesalesandprofits)  
+[Interactive sales dashboard](https://public.tableau.com/app/profile/philip.lee1073/viz/MetaDatabaseEngineerCourse8-LittleLemon/Interactivesalesdashboard)  
 
 <br>
 
